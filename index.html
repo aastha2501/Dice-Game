@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="player player0 player-active">
+            <h2 class="name">Player 1</h2>
+            <p class="total-score player0-score">0</p>
+
+            <div class="current">
+                <p class="current-label">Current</p>
+                <p class="current-score currentScore-0">0</p>
+            </div>
+        </section>
+
+        <section class="player player1">
+            <h2 class="name">Player 2</h2>
+            <p class="total-score player1-score">0</p>
+
+            <div class="current">
+                <p class="current-label">Current</p>
+                <p class="current-score currentScore-1">0</p>
+            </div>
+        </section>
+
+        <img src="dice-4.png" alt="" class="dice">
+        <button class="btn new-btn">🔄 New Game</button>
+        <button class="btn roll-btn">🎲 Roll Dice</button>
+
+        <div class="winner">
+            <p class="animate__animated animate__heartBeat animate__infinite">🎉 WINNER 🎉</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
